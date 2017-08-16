@@ -1,0 +1,52 @@
+<div class="container">
+    <form class="form-horizontal" role="form" method="POST" action="/login">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h4>Please Login</h4>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="sr-only" for="email">E-Mail Address</label>
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+                        <input type="text" name="email" class="form-control" id="email" placeholder="you@example.com" autofocus>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="sr-only" for="password">Password</label>
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                        <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6" style="padding-top: .35rem">
+                <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+                    <input type="checkbox" id="test1" />
+                    <label for="test1" style="padding-bottom: .15rem">Remember me</label>
+                </div>
+            </div>
+        </div> -->
+        <div class="row" style="padding-top: 1rem">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-outline-primary float-right" (click)="login()"><i class="fa fa-sign-in"></i> Login</button>
+                <!-- <a class="btn btn-link" href="/password/reset">Forgot Your Password?</a> -->
+            </div>
+        </div>
+    </form>
+</div>
